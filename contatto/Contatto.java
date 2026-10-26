@@ -4,13 +4,15 @@ public class Contatto {
     private String nome;
     private String email;
     private String numero;//sring perche non devo fare calcoli sul numero inoltre alcuni numeri iniziano per zero e con int si perde lo zero iniziale
-    public Contatto(String nome, String email, String numero){
-        this.nome =nome;
-        this.numero =numero;
-        this.email =email;
+
+    public Contatto(String nome, String email, String numero) {
+        this.nome = nome;
+        this.numero = numero;
+        this.email = email;
     }
+
     /* Getter e Setter
-    * */
+     * */
     public String getEmail() {
         return email;
     }
@@ -38,6 +40,6 @@ public class Contatto {
     @Override
     public String toString() {
         return
-                 nome +" - " + email + " - "  + numero;
+                nome + " - " + email + " - " + numero;
     }
 }
